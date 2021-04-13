@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Chaincontroller : MonoBehaviour
 {
+    [SerializeField] GameObject m_selectBall = null;
+
     RaycastHit hit;
 
     // Start is called before the first frame update
@@ -15,7 +17,7 @@ public class Chaincontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
+        Vector2 mousePos = Input.mousePosition;
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -27,7 +29,7 @@ public class Chaincontroller : MonoBehaviour
                 {
                     //Destroy(hit.collider.gameObject);
                     //hit.collider.gameObject.GetComponent<Renderer>().material.SetColor("_EmissionColor", new Color(1f, 1f, 0, 0.5f));
-
+                    Instantiate(m_selectBall, hit.collider.transform);
                 }
             }
         }
