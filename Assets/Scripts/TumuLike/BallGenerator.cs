@@ -5,13 +5,14 @@ using UnityEngine;
 public class BallGenerator : MonoBehaviour
 {
     [SerializeField] Transform m_limitA;
-    [SerializeField] GameObject[] m_go;
+    [SerializeField] GameObject[] m_go = null;
     int m_index;
     float m_timer;
     [SerializeField] float m_interval = 1f;
 
     private void Update()
     {
+        if (m_go == null) return;
         m_timer += Time.deltaTime;
         if (m_timer > m_interval)
         {
