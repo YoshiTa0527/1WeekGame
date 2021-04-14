@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BallGenerator : MonoBehaviour
 {
-    [SerializeField] Transform m_limitA;
     [SerializeField] GameObject[] m_go = null;
     int m_index;
     float m_timer;

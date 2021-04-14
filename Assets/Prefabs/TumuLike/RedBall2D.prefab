@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7617879709134241679}
   m_Layer: 0
   m_Name: RedBall2D
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,3 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pushPower: 1
+  m_selectBall: {fileID: 414718930624515456, guid: 9b8b9cb450d73424cad7b72dca6d9a43,
+    type: 3}
+  isSelect: 0
